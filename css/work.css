@@ -40,7 +40,7 @@
   size: var(--size--sm);
 }
 .work_btn {
-  font-size: var(--size--sm);
+  font-size: xx-small;
 }
 
 /* Media Queries */

@@ -135,6 +135,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Media Queries */
+@media (width < 280px) {
+  .footer_title {
+    font-size: x-small;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--clr-slate600);
+    text-align: center;
+  }
+}
 /* xxs */
 @media (min-width: 280px) {
   .container {

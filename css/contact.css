@@ -55,10 +55,19 @@
 }
 
 /* Media Queries */
+@media (width< 280px) {
+  .arrow {
+    display: none;
+  }
+}
 /* xxs */
 @media (min-width: 280px) {
   .arrow {
     display: none;
+  }
+  .contact_links > a > svg {
+    height: 1.5rem;
+    width: 1.5rem;
   }
 }
 /* xs */
