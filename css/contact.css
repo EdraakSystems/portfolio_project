@@ -1,0 +1,119 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.contact_title {
+  font-size: var(--size-2xl);
+  color: var(--clr-light);
+  text-transform: capitalize;
+}
+.contact_description {
+  font-size: var(--size--sm);
+  color: var(--clr-slate600);
+  max-width: 60ch;
+}
+.contact_links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.contact_links > a > svg {
+  height: 2rem;
+  width: 2rem;
+  color: var(--clr-rose);
+  transition: color, transform 0.5s;
+}
+.contact_links > a > svg:hover {
+  color: var(--clr-light);
+  transform: translateY(-3px);
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(-50%, -50%);
+  background-color: var(--clr-rose);
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.7s;
+}
+.arrow_svg {
+  color: var(--clr-light);
+}
+.arrow:hover .arrow_svg {
+  color: var(--clr-dark);
+}
+.arrow:hover {
+  background: var(--clr-light);
+}
+
+/* Media Queries */
+/* xxs */
+@media (min-width: 280px) {
+  .arrow {
+    display: none;
+  }
+}
+/* xs */
+@media (min-width: 475px) {
+  .contact {
+    gap: 1.5rem;
+  }
+  .contact_title {
+    font-size: var(--size-3xl);
+  }
+  .contact_description {
+    font-size: var(--size--base);
+  }
+  .contact_links > a > svg {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+}
+/* md */
+@media (min-width: 768px) {
+  .arrow {
+    display: inline-block;
+    width: auto;
+    height: auto;
+  }
+}
+/* lg */
+@media (min-width: 1024px) {
+  .contact_title {
+    font-size: var(--size-4xl);
+  }
+  .contact_description {
+    font-size: var(--size--lg);
+  }
+
+  .contact_links > a > svg {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .contact {
+    gap: 2rem;
+  }
+  .contact_title {
+    font-size: var(--size-5xl);
+  }
+  .contact_description {
+    font-size: var(--size--2xl);
+  }
+
+  .contact_links > a > svg {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+}
