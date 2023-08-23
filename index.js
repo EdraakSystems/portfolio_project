@@ -29,7 +29,7 @@ function mobileNav() {
 mobileNav();
 
 function scrollToTop() {
-  window.scroll(100, 100);
+  window.scroll(0, 0);
 }
 
 const themeToggleBtn = document.querySelectorAll("#theme_toggle");
